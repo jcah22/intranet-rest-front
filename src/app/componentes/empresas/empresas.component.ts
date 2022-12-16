@@ -21,8 +21,6 @@ export class EmpresasComponent implements OnInit {
 
     this.es.getEmpresas().subscribe(
       empresa => this.empresa = empresa
-
-      
     )
 
     Swal.fire({

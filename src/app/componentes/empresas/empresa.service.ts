@@ -8,7 +8,7 @@ import Swal from 'sweetalert2'
 @Injectable()
 export class EmpresaService{
 
-    private urlEndPoint : string ='http://localhost:8080/api/empresas';
+    private urlEndPoint : string ='http://localhost:8080/api/empresas/';
 
     constructor(private http:HttpClient){
 
