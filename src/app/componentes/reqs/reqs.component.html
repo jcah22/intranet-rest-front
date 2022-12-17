@@ -1,13 +1,13 @@
 <div class="container-fluid mb-5">
     <div class="row row-cols-xs-2 row-cols-sm-2 row-cols-md-3 row-cols-lg-6 row-cols-xl-6 row-cols-xxl-6 g-6">
-      <div class="col mt-3 text-center" th:each=" r: ${reqs}">
+      <div class="col mt-3 text-center" *ngFor="let reqs of reqs">
         <a href=" ">
           <div class="card border-primary h-100">
             <div class="card-body">
-              <label class="fs-6 font-weight-bold fst-italic"></label>
+              <label class="fs-1 font-weight-bold fst-italic">{{reqs.codigo}}</label>
             </div>
             <div class="card-footer">
-              <small class="text-dark font-weight-bold font-italic" ></small>
+              <small class="text-dark font-weight-bold font-italic fs-3 text-wrap" >{{reqs.nombre}}</small>
             </div>
           </div>
         </a>

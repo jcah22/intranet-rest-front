@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Reqs } from './Reqs';
+import { ReqsService } from './reqs.service';
 
 @Component({
   selector: 'app-reqs',
@@ -7,9 +9,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ReqsComponent implements OnInit {
 
-  constructor() { }
+  reqs: Reqs[] | undefined;
+
+  constructor(private req : ReqsService) { }
 
   ngOnInit(): void {
+
+      this.req.getReqs().subscribe(
+        reqs => this.reqs = reqs
+      )
+  
   }
 
 }

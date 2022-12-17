@@ -28,7 +28,7 @@ export class EmpresasComponent implements OnInit {
       icon: 'success',
       title: 'Registros cargados correctamente!',
       showConfirmButton: false,
-      timer: 2000
+      timer: 1500
     })
    
   }

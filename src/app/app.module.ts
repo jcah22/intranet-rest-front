@@ -9,6 +9,7 @@ import { EmpresaService } from './componentes/empresas/empresa.service';
 import { HeaderComponent } from './componentes/header/header.component';
 import { ReqsComponent } from './componentes/reqs/reqs.component';
 import { FooterComponent } from './componentes/footer/footer.component';
+import { ReqsService } from './componentes/reqs/reqs.service';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,7 @@ import { FooterComponent } from './componentes/footer/footer.component';
     HttpClientModule,
     AppRoutingModule
   ],
-  providers: [EmpresaService],
+  providers: [EmpresaService,ReqsService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
